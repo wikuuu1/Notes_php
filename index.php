@@ -4,11 +4,11 @@ declare (strict_types = 1);
 namespace App;
 
 require_once "src/utils/debug.php";
-require_once "src/View.php";
+require_once "src/utils/controller.php";
+// require_once "src/View.php";
 
-const DEFAULT_ACTION = 'list';
+$controller = new Controller($_GET, $_POST);
 
-$action = $_GET['action'] ?? DEFAULT_ACTION;
+$controller->run();
 
-$view = new View();
-$view->render($action);
+// $view->render($page, $viewsParams);

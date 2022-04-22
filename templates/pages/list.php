@@ -1,5 +1,6 @@
 <div>
     <h3>lista notatek</h3>
-    <?php echo htmlentities($action ?? "") ?>
+    <!-- <?php echo $data['title'] ?> -->
+    <?php echo $params['resultList'] ?>
 
 </div>
