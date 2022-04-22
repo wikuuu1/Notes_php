@@ -1,14 +1,18 @@
 <?php
+
 declare (strict_types = 1);
 
 namespace App;
 
-require_once "src/utils/debug.php";
-require_once "src/utils/controller.php";
-// require_once "src/View.php";
+require_once "src/Utils/debug.php";
+require_once "src/controller.php";
 
-$controller = new Controller($_GET, $_POST);
+$request = [
+    'get' => $_GET,
+    'post' => $_POST,
+];
 
-$controller->run();
+//$controller = new Controller($request);
+//$controller->run();
 
-// $view->render($page, $viewsParams);
+(new Controller($request))->run();

@@ -10,16 +10,14 @@
 <body class="body">
     <div class="wrapper">
         <div class="header">
-            <a href="/">
-                <h1><i class="far fa-clipboard"></i>Moje notatki</h1>
-            </a>
+            <h1><i class="far fa-clipboard"></i>Moje notatki</h1>
         </div>
 
         <div class="container">
             <div class="menu">
                 <ul>
                     <li><a href="/">Strona główna</a></li>
-                    <li><a href="/?action=create">Stwórz nową notatkę</a></li>
+                    <li><a href="/?action=create">Nowa notatka</a></li>
                 </ul>
             </div>
 
@@ -28,9 +26,9 @@
             </div>
         </div>
 
-        <footer>
+        <div class="footer">
             <p>Notatki - projekt w kursie PHP</p>
-        </footer>
+        </div>
     </div>
 </body>
 
